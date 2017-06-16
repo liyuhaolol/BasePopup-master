@@ -55,7 +55,7 @@ v1.6.1:
 
 ```xml
 	dependencies {
-	        compile 'com.github.razerdp:BasePopup:最新版'
+	        compile 'com.github.razerdp:BasePopup:1.7.1'
 	}
 ```
 

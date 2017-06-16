@@ -27,12 +27,9 @@ import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.app.Activity;
 import android.content.Context;
-import android.content.res.XmlResourceParser;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
-import android.util.AttributeSet;
 import android.util.Log;
-import android.util.Xml;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,7 +41,6 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.PopupWindow;
 
-import org.xmlpull.v1.XmlPullParser;
 
 import java.lang.reflect.Field;
 
@@ -359,8 +355,9 @@ public abstract class BasePopupWindow implements BasePopup, PopupWindow.OnDismis
     }
 
     /**
-     * 当PopupWindow展示的时候，这个参数决定了是否自动弹出输入法
-     * 如果使用这个方法，您必须保证通过 <strong>getInputView()<strong/>得到一个EditTextView
+     * * 当PopupWindow展示的时候，这个参数决定了是否自动弹出输入法
+     * 如果使用这个方法，您必须保证通过getInputView()得到一个EditTextView
+     * @param autoShow 自动显示
      */
     public void setAutoShowInputMethod(boolean autoShow) {
         this.autoShowInputMethod = autoShow;
